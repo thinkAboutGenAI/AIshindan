@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AIに対する考え診断</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 style="text-align: center">AIに対する考え診断 in Japan</h1>
+  <div style="font-size: 13px;margin-bottom: 40px; background: #ddd; padding: 18px">
+    注意事項 <br>
+    ※この診断は正確な結果を示すものではありません <br>
+    ※診断結果によってなんらかの不利益が生じた場合、当サイト制作者は責任を負いかねます<br>
+    ※このサイトに入力されたデータの収集は行っていません <br>
+    ※全部で<span id="syutudaisuuSpan" style="display: inline;"></span>問ありますが、回答によっては一部の問題は飛ばされます <br>
+    ※このサイトを制作するに当たり参考にした主な資料:『AIと著作権に関する考え方について　令和6年3月15日』『文化審議会著作権分科会報告書　平成29年4月』『権利制限一般規定ワーキングチーム 報告書　平成22年1月』『デジタル化・ネットワーク化の進展に対応した柔軟な権利制限規定に関する基本的な考え方　令和元年10月24日』『社会権規約　条約機関の一般的意見25』
+  </div>
+  <hr>
+  <div id="questionDiv">
+    [問<span id="questionNumberSpan">1</span>]<br>
+    <span id="questionSentenceSpan"></span><br>
+    <input type="radio" name="answer" id="a1" value="1"><label for="a1" id="label1"></label><br>
+    <input type="radio" name="answer" id="a2" value="2"><label for="a2" id="label2"></label><br>
+    <input type="radio" name="answer" id="a3" value="3"><label for="a3" id="label3"></label><br>
+    <input type="radio" name="answer" id="a4" value="4"><label for="a4" id="label4"></label><br>
+    <input type="radio" name="answer" id="a5" value="5"><label for="a5" id="label5">その他</label><br>
+    <input type="radio" name="answer" id="a6" value="6"><label for="a6" id="label6">分からない</label>
+  </div>
+  <button id="modoruButton" onclick="modoru()">←戻る</button>
+  <button id="tsugiheButton" onclick="tsugihe()">次へ→</button>
+  <div id="resultDiv" class="none">
+    💩<コンニチハ
+  </div>
+  <button id="resetButton" class="none" onclick="reset()" style="width:100px;">リセット</button>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
