@@ -566,15 +566,15 @@ function tsugihe(){
         
           
       }
-      resultSentence += '<button id="resetButton" onclick="reset()" style="width:100px;">リセット</button>';
-      $("resultDiv").innerHTML = resultSentence;
+      
     }
       
   
     
     
     
-    
+    resultSentence += '<button id="resetButton" onclick="reset()" style="width:100px;">リセット</button>';
+    $("resultDiv").innerHTML = resultSentence;
     $("resultDiv").classList.remove("none");
     
   }
