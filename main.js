@@ -574,6 +574,7 @@ function tsugihe(){
     
     
     $("resultDiv").classList.remove("none");
+    console.log($("resetButton"));
     $("resetButton").classList.remove("none");
   }
   
@@ -648,7 +649,7 @@ function reset(){
 function onload() {
   $("syutudaisuuSpan").innerText = questions.length;
   setQuestion(1);
-  console.log($("resetButton"));
+  
 }
 
 window.onload = onload();
