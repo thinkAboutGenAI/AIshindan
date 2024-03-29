@@ -563,7 +563,7 @@ function tsugihe(){
         }
         
         resultSentence += "<br>";
-        resultSentence += '<button id="resetButton" class="none" onclick="reset()" style="width:100px;">リセット</button>';
+        resultSentence += '<button id="resetButton" onclick="reset()" style="width:100px;">リセット</button>';
           
       }
       $("resultDiv").innerHTML = resultSentence;
