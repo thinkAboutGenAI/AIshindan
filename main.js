@@ -422,7 +422,7 @@ const questions = [
   {
     number: 61,
     type: "AIの有用性",
-    sentence: "AI(生成AIに限らない)は医療の発展や食料問題の解決等生存件に関する分野に寄与すると思う",
+    sentence: "AI(生成AIに限らない)は医療の発展や食料問題の解決等生存権に関する分野に寄与すると思う",
     choice: ["とてもそう思う", "まあそう思う", "あまりそう思わない", "全くそう思わない", "その他", "分からない"],
     value: [2, 1, -1, -2, 0, 0]
   },
@@ -452,7 +452,9 @@ function modoru(){
   let _lastQuestion = user.answers[user.answers.length -1];
   user.questionNumber = _lastQuestion[0];
   setQuestion(_lastQuestion[0]);
-  $("a" + _lastQuestion[1]).checked = true;
+  for(var t=1;t<=6;t++){
+    $("a" + t).checked = false;
+  }
   user.answers.splice(user.answers.length -1);
   
     
