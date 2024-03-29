@@ -563,6 +563,7 @@ function tsugihe(){
         }
         
         resultSentence += "<br>";
+        resultSentence += "<button id="resetButton" class="none" onclick="reset()" style="width:100px;">リセット</button>";
           
       }
       $("resultDiv").innerHTML = resultSentence;
@@ -574,8 +575,7 @@ function tsugihe(){
     
     
     $("resultDiv").classList.remove("none");
-    console.log($("resetButton"));
-    $("resetButton").classList.remove("none");
+    
   }
   
     
@@ -639,7 +639,7 @@ function reset(){
   user = new User();
   setQuestion(1);
   $("resultDiv").classList.add("none");
-  $("resetButton").classList.add("none");
+  
   $("questionDiv").classList.remove("none");
   $("modoruButton").classList.remove("none");
   $("tsugiheButton").classList.remove("none");
